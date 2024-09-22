@@ -2,26 +2,26 @@ package org.example;
 
 public class MinMaxMedel {
 
+
     public static void minMaxAvg(Pair[] prices) {
 
-        Pair[] getPrices = prices;
-        int min = getPrices[0].pris;
-        int max = getPrices[0].pris;
+        int min = prices[0].pris;
+        int max = prices[0].pris;
 
         int minPrice = 0;
         int maxPrice = 0;
         int total = 0;
 
-        for (int i = 0; i < getPrices.length; i++) {
-            if (getPrices[i].pris < min) {
-                min = getPrices[i].pris;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i].pris < min) {
+                min = prices[i].pris;
                 minPrice = i;
             }
-            if (getPrices[i].pris > max) {
-                max = getPrices[i].pris;
+            if (prices[i].pris > max) {
+                max = prices[i].pris;
                 maxPrice = i;
             }
-            total += getPrices[i].pris;
+            total += prices[i].pris;
         }
 
         float medel = (float) total / 24;

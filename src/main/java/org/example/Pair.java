@@ -15,11 +15,7 @@ public class Pair implements Comparable<Pair> {
 
     @Override
     public int compareTo(Pair a) {
-        //if (this.pris != a.pris) {
         return this.pris - a.pris;
-        //  } else {
-        // return this.tid.compareTo(a.tid);
-        //   }
     }
 }
 
